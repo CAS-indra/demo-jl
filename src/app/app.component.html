@@ -1,28 +1,11 @@
 <!-- cabecera -->
 <app-cabecera></app-cabecera>
+<hr>
 <app-titulo></app-titulo>
-
-<h3 [style.color]="color"> Tengo {{ proyectos.length }} proyectos</h3>
-
-<progress
-          *ngIf="value>0"
-          [value]= "value"
-          max = "10"></progress>
-
-
-<button (click)="incrementar()">Incrementar</button>
-<button (click)="reducir()">Reducir</button>
-
-<div *ngFor="let paella of proyectos">
-  <span [ngClass]="{ active: paella.status==1, pending: paella.status==0}">
-    🐱‍👤 {{paella.name}} - {{paella.status}}
-  </span>
-</div>
-
-
-
-<p> El multiplo de 3 de {{value}} es {{multiplo(3)}}</p>
-
+<!--
+ -->
 
 <router-outlet></router-outlet>
+
+
 <!-- pie -->
