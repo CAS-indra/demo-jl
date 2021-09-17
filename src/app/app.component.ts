@@ -5,4 +5,28 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {}
+export class AppComponent {
+  public proyectos = [
+    {
+      name: 'Aprender angular',
+      status: 1,
+    },
+    {
+      name: 'Tener un buen trabajo',
+      status: 0,
+    },
+  ];
+  public color = 'brown';
+  public value = 5;
+
+  public incrementar(): void {
+    this.value++;
+  }
+  public reducir(): void {
+    this.value--;
+  }
+
+  public multiplo(cantidad: number): number {
+    return cantidad * this.value;
+  }
+}
