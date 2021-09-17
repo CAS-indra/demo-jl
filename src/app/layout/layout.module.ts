@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CabeceraComponent } from './cabecera/cabecera.component';
+import { DesarrolladorComponent } from './desarrollador.component';
+import { FechaComponent } from './fecha.component';
 
 @NgModule({
-  declarations: [CabeceraComponent],
+  declarations: [CabeceraComponent, DesarrolladorComponent, FechaComponent],
   imports: [CommonModule],
-  exports: [CabeceraComponent],
+  exports: [CabeceraComponent, DesarrolladorComponent, FechaComponent],
 })
 export class LayoutModule {}
